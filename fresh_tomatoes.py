@@ -19,6 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #F3D6D0;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -39,9 +40,13 @@ main_page_head = '''
             margin-bottom: 20px;
             padding-top: 20px;
         }
+        /* make the movie tile stand-out when hovering */
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #EFE0DD;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
             cursor: pointer;
+            border-radius: 5px;
+            color: #EF6145;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -55,6 +60,17 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        /* change the default navbar color and shadows */
+        .navbar{
+            background-color: #EF6145;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+        }
+        .navbar-brand{
+            color: #323438;
+            text-shadow: none;
+        }.navbar-brand:hover{
+            color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -104,7 +120,7 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
